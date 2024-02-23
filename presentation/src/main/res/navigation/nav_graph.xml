@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/SplashFragment">
+
+    <fragment
+        android:id="@+id/SplashFragment"
+        android:name="com.example.stradiusers.fragments.SplashFragment"
+        android:label="@string/splash_fragment_label"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashFragment_to_usersFragment"
+            app:destination="@id/UsersFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/UsersFragment"
+        android:name="com.example.stradiusers.fragments.UsersFragment"
+        android:label="@string/users_fragment_label"
+        tools:layout="@layout/fragment_users">
+        <action
+            android:id="@+id/action_usersFragment_to_userDetailFragment"
+            app:destination="@id/UserDetailFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <argument
+            android:name="Quantity"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/UserDetailFragment"
+        android:name="com.example.stradiusers.fragments.UserDetailFragment"
+        android:label="@string/user_detail_fragment_label"
+        tools:layout="@layout/fragment_user_detail">
+        <argument
+            android:name="UserArgument"
+            android:defaultValue="@null"
+            app:argType="com.example.domain.operations.UserParams"
+            app:nullable="true" />
+    </fragment>
+</navigation>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">StradiUsers</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="users_fragment_label">Users Fragment</string>
+    <string name="splash_fragment_label">Splash Fragment</string>
+    <string name="user_detail_fragment_label">User Detail Fragment</string>
+    <string name="dialog_button">Aceptar</string>
+    <string name="dialog_close_button_description">Cerrar diálogo</string>
+    <string name="dialog_button_description">Imagen descriptiva del error</string>
+    <string name="toolbar_title_contacts">CONTACTOS</string>
+    <string name="address">Dirección</string>
+    <string name="options_fullname_title">Nombre y apellidos</string>
+    <string name="options_email_title">Email</string>
+    <string name="options_gender_title">Género</string>
+    <string name="options_date_title">Fecha de registro</string>
+    <string name="options_phone_title">Teléfono</string>
+    <string name="user_location">Ubicación del usuario</string>
+    <string name="quantity_users_title">¿Cuántos usuarios deseas generar?</string>
+    <string name="quantity_et_hint">Min 1 - Máx 5000</string>
+
+</resources>
